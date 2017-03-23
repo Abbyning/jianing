@@ -1,0 +1,186 @@
+/* 重置&默认(reset&base)(tags) */
+*[hidefocus], input, textarea, a {
+    outline: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset, img, html, body, iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+caption, th {
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+em, strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, textarea, select, input {
+    font-family: microsoft yahei, arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+body {
+    background: #eee;
+    line-height: 1.5em;
+    -webkit-text-size-adjust: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+input {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+
+/* 统一清除浮动 */
+.f-cb:after, .g-bd:after, .g-bd1:after, .g-bd3:after, .g-ft:after, .u-starfive:after, .m-category .u-levelitm:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* 布局(grids)(.g-) */
+/* 页面 */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    zoom: 1;
+    text-align: center;
+}
+
+.g-doc {
+    position: relative;
+    zoom: 1;
+    text-align: left;
+}
+
+.g-ft, .g-bd {
+    margin: 0 auto;
+}
+
+.g-bd {
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.g-ft {
+    padding: 0 10px 20px;
+}
+
+/*模块*/
+.header-tit img{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.header-tit h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/*表单验证*/
+.inp input{
+    display: block;
+    width: 85%;
+    height: 40px;
+    margin: 0 auto;
+    padding-left: 8px;
+    border: none;
+}
+.inp .text{
+    border-radius: 16px 16px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+.inp .pass{
+    border-radius: 0 0 16px 16px;
+}
+.inp .btn{
+    width: 87%;
+    height: 43px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    background-color: #33b4ff;
+    color: white;
+    font-size: 16px;
+}
+.layout p{
+    color: #bdbdbd;
+    margin-bottom: 40px;
+}
+.layout span{
+    color: #bdbdbd;
+    padding: 0 10px;
+}
+.layout a{
+    color: #757575;
+}
+/*底部*/
+.lang-select-list{
+    margin-top: 30px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.lang-select-list li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.lang-select-list li a{
+    color: #757575;
+}
+.lang-select-list a span{
+    color: black;
+}
+.nf-intro span{
+    color: #757575;
+}

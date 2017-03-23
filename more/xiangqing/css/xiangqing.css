@@ -1,0 +1,368 @@
+/* 重置&默认(reset&base)(tags) */
+*[hidefocus], input, textarea, a {
+    outline: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset, img, html, body, iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+caption, th {
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+em, strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, textarea, select, input {
+    font-family: microsoft yahei, arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+body {
+    background: #f7f7f7;
+    line-height: 1.5em;
+    -webkit-text-size-adjust: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+input {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+/* 统一调用背景图 */
+.u-starsimple {
+    background: url(../images/sprite.png) no-repeat;
+    background-size: 86px;
+}
+
+.w-load p {
+    background: url(../images/circle.gif) no-repeat;
+}
+
+.u-icn-person, .u-icn-search, .u-icn-search2, .u-icn-close, .u-icn-home, .u-icn-shelf, .icn-quicknav {
+    background: url(../images/icon.png) no-repeat;
+    background-size: 22px;
+}
+
+.u-more-open b, .u-more-close b {
+    background: url(../images/arr.png) no-repeat;
+    background-size: 12px 6px;
+}
+
+.u-ttl3 .more {
+    background: url(../images/arr_right.png) right center no-repeat;
+    background-size: 8px 12px;
+}
+
+.u-load p {
+    background: url(../images/circle.gif) no-repeat;
+}
+
+.m-nav em {
+    background: url(../images/icon-nav.png) no-repeat;
+    background-size: 34px;
+}
+
+.icn-talk, .icn-smile {
+    background: url(../images/icon-small.png) no-repeat;
+    background-size: 16px;
+}
+
+.icn-disappoint, .icn-book {
+    background: url(../images/icon-big.png) no-repeat;
+    background-size: 130px;
+}
+
+.icn-redeem-ok, .icn-coupon-ok {
+    background: url(../images/msg.png) no-repeat;
+    background-size: 255px;
+}
+
+.icn-quan {
+    background: url(../images/quan.png) no-repeat;
+    background-size: 91px;
+}
+
+.m-coupon-help .img {
+    background: url(../images/coupon.jpg) no-repeat;
+}
+
+.icn-limitfree {
+    background: url(../images/limitedfree.png) no-repeat;
+    background-size: 36px;
+}
+
+/* 统一清除浮动 */
+.f-cb:after, .g-bd:after, .g-bd1:after, .g-bd3:after, .g-ft:after, .u-starfive:after, .m-category .u-levelitm:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* 布局(grids)(.g-) */
+/* 页面 */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    zoom: 1;
+    text-align: center;
+}
+
+.g-doc {
+    position: relative;
+    zoom: 1;
+    text-align: left;
+}
+
+.g-ft, .g-bd {
+    margin: 0 auto;
+}
+
+.g-bd {
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.g-ft {
+    padding: 0 10px 20px;
+}
+
+
+/* 书籍详情 */
+.m-hd {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background: #1dabc5;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.m-hd .act {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 56px;
+    z-index: 1
+}
+
+.m-hd .act ul {
+    font-size: 0;
+}
+
+.m-hd .act li {
+    float: left;
+}
+
+.m-hd .act li, .m-pagenav li {
+    height: 56px;
+    box-sizing: border-box;
+    line-height: 56px;
+}
+
+.m-hd .act a {
+    display: block;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.m-hd .act .help {
+    line-height: 56px;
+    color: #a1d5e2;
+}
+
+.m-hd .act .help span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #a1d5e2;
+    border-radius: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.m-pagenav {
+    margin-right: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.m-pagenav .itm {
+    padding: 0 18px;
+}
+
+.m-pagenav li {
+    display: inline-block;
+    vertical-align: top
+}
+
+.m-pagenav .icn-arrow {
+    margin-top: 19px;
+}
+
+.m-pagenav h1 {
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.m-cprt {
+    color: #999;
+    line-height: 2em;
+    text-align: center;
+}
+
+.m-cprt a {
+    color: #999;
+}
+.u-sep b {
+    display: inline-block;
+    height: 28px;
+    margin: 14px 0 0;
+    border-left: 1px solid #61c4d7;
+    font-size: 0;
+}
+
+
+.icn-arrow {
+    position: relative;
+    display: inline-block;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    overflow: hidden;
+}
+
+.icn-arrow .arrow0, .icn-arrow .arrow1 {
+    position: absolute;
+    top: 0;
+    border: 10px solid transparent;
+}
+
+.icn-arrow .arrow0 {
+    z-index: 1;
+}
+
+.icn-arrow-left {
+    width: 10px;
+    height: 20px;
+}
+
+.icn-arrow-left .arrow0, .icn-arrow-left .arrow1 {
+    left: -10px;
+    border-right-color: #fff;
+}
+
+.icn-arrow-left .arrow0 {
+    left: -7px;
+    border-right-color: #1dabc5;
+}
+
+.icn-arrow-right {
+    width: 8px;
+    height: 16px;
+}
+
+.icn-arrow-right .arrow0, .icn-arrow-right .arrow1 {
+    right: -8px;
+    border-left-color: #b3b3b3;
+}
+
+.icn-arrow-right .arrow0 {
+    right: -6px;
+    border-left-color: #f7f7f7;
+}
+
+.icn-arrow-top {
+    height: 8px;
+    width: 16px;
+}
+
+.icn-arrow-top .arrow0, .icn-arrow-top .arrow1 {
+    top: -8px;
+    left: 0;
+    border-bottom-color: #aeacad;
+}
+
+.icn-arrow-top .arrow0 {
+    top: -6px;
+    border-bottom-color: #f7f7f7;
+}
+
+.icn-arrow1 {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+}
+
+.icn-arrow1 span {
+    position: absolute;
+    border: 5px solid transparent;
+}
+
+.icn-arrow1-bottom span {
+    left: 0;
+    border-top-color: #b1b1b1;
+}
+
+
+/*内容*/
+.m-bookdata {
+    padding: 20px 10px 10px;
+    color: #666;
+}

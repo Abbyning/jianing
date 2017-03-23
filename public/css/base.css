@@ -1,0 +1,180 @@
+/*reset css  重置样式*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /*兼容移动端主流浏览器*/
+
+    -webkit-tap-highlight-color: transparent;/*设置点击高亮颜色是透明*/
+}
+
+body{
+    font-family: Microsoft YaHei,sans-serif;/*sans-serif一般移动端都有*/
+    font-size: 14px;
+    color: #333;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border:none;
+    outline: none;
+    resize: none;
+
+    -webkit-appearance:none; /*清除移动端默认样式 内阴影立体感*/
+}
+
+/*common css 公用样式*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: "";
+
+    height: 0;
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+
+    clear: both;
+}
+
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.m_l10{
+    margin-left: 10px;
+}
+b,
+strong {
+    font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+    font-weight: bolder;
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+    font-style: italic;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?kmd0k1');
+    src: url('../fonts/icomoon.eot?kmd0k1#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?kmd0k1') format('truetype'), url('../fonts/icomoon.woff?kmd0k1') format('woff'), url('../fonts/icomoon.svg?kmd0k1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+    content: "\e901";
+}
+.icon-pencil:before {
+    content: "\e905";
+}
+.icon-image:before {
+    content: "\e90d";
+}
+.icon-file-empty:before {
+    content: "\e924";
+}
+.icon-bell:before {
+    content: "\e951";
+}
+.icon-search:before {
+    content: "\e986";
+}
+.icon-cog:before {
+    content: "\e994";
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-download:before {
+    content: "\e9c7";
+}
+.icon-heart:before {
+    content: "\e9da";
+}
+@media only screen and (width: 320px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media only screen and (width: 360px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (width: 375px) {
+    html {
+        font-size: 18.75px;
+    }
+}
+@media only screen and (width: 400px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media only screen and (width: 411px) {
+    html {
+        font-size: 20.55px;
+    }
+}
+@media only screen and (width: 414px) {
+    html {
+        font-size: 20.7px;
+    }
+}
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 32px;
+    }
+}

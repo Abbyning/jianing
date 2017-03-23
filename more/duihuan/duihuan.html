@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>兑换码-多看书城</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="duokan"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-itunes-app" content="app-id=517850153" />
+    <link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="css/duihuan.css"/>
+</head>
+<body id="mobile-duokan-com" data-action="app/action/app">
+<div class="g-doc">
+    <header class="g-hd">
+        <div class="m-hd">
+            <ul class="m-pagenav f-cb">
+                <li class="itm u-back" id="goback" data-action-run="goBack">
+                    <div class="icn-arrow icn-arrow-left">
+                        <a href="../../index.html"><span class="arrow0"></span></a>
+                        <span class="arrow1"></span>
+                    </div>
+                </li>
+                <li class="u-sep"><b></b></li>
+                <li class="itm"><h1>兑换码换书</h1></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="g-bd" id="body">
+        <div class="m-redeem" data-widget="app/view/redeem_input">
+            <!-- 输入兑换码 -->
+            <div class="redeemform j-area">
+                <div class="u-msg">
+                    <h2>输入图书兑换码</h2>
+                </div>
+                <form class="ui-form">
+                    <div class="ui-form-item"><input name="redeem" data-rule="^[a-zA-Z0-9]{12}$" data-errormessage-required="无效兑换码" type="text" class="u-txt j-input ui-input" value=""/></div>
+                    <div class="ui-form-item">
+                        <span class="ui-button-morange ui-button"><input class="u-btn1 ui-button-text j-exchange" value="确认兑换" type="submit" /></span>
+                    </div>
+                </form>
+            </div>
+            <!-- 确认兑换码 -->
+            <div class="redeembook j-area" style="display:none;"></div>
+            <!-- 兑换成功 -->
+            <div class="u-tips u-tips-success j-area" style="display:none;">
+                <div class="u-msg2">
+                    <div class="img icn-redeem-ok"></div>
+                    <h2>恭喜您，图书兑换成功</h2>
+                </div>
+                <a href="/m/u/book" class="u-btn1">前往我的书架</a>
+            </div>
+            <!-- 兑换失败 -->
+            <div class="u-tips u-tips-faild j-area" style="display:none;"></div>
+        </div>
+
+    </div>
+    <!-- 导航盖层 -->
+    <div class="m-quicknav-cnt" id="quicknav" style="display:none;">
+        <div class="m-nav" data-widget="app/view/login">
+            <table>
+                <tr>
+                    <td><a href="/m/sale/1" class="itm sale"><em></em></a>特价</td>
+                    <td><a href="/m/sale/2" class="itm free"><em></em></a>免费</td>
+                    <td><a href="/m/sale/3" class="itm good"><em></em></a>畅销</td>
+                    <td><a href="/m/u/book" class="itm bookshelf" target="_blank"><em></em></a>书架</td>
+                </tr>
+                <tr>
+                    <td><a href="/m/category" class="itm catagory"><em></em></a>分类</td>
+                    <td><a href="/m/redeem/input" class="redeem"><em></em></a>兑换码</td>
+                    <td><a data-href="/m/u/coupon" class="coupon j-needlogin"><em></em></a>购书券</td>
+                    <td><a href="/product" class="itm down" target="_blank"><em></em></a>客户端</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- 搜索盖层 -->
+    <div class="m-search-form" id="search-form" style="display:none" data-widget="app/view/search">
+        <a href="javascript:void(0);" class="close j-close"><b class="u-icn-close"></b></a>
+        <div class="form">
+            <input class="j-search-input" type="text" placeholder="输入书名或作者…" />
+            <a href="javascript:void(0)" class="u-icn-search2 j-search"></a>
+        </div>
+        <div class="m-hotsearch j-hotsearch">
+            <h4><p>大家都在搜…</p></h4>
+            <ul class="u-list-col1">
+
+                <li><a href="javascript:void(0)" hidefocus="hidefocus">三生三世十里桃花</a></li>
+
+                <li><a href="javascript:void(0)" hidefocus="hidefocus">未来简史：从智人到智神</a></li>
+
+                <li><a href="javascript:void(0)" hidefocus="hidefocus">那片星空，那片海</a></li>
+
+                <li><a href="javascript:void(0)" hidefocus="hidefocus">大秦帝国（全新修订进阶版 全18册）</a></li>
+
+                <li><a href="javascript:void(0)" hidefocus="hidefocus">解忧杂货店</a></li>
+
+            </ul>
+        </div>
+        <div class="m-searchlist j-searchlist" style="display:none;">
+            <ul class="u-list-col1 j-search-list">
+            </ul>
+        </div>
+    </div>
+
+    <div class="g-ft">
+        <div class="m-cprt">
+            <p>
+                <a href="/m/product" target="_blank">多看客户端</a>
+                <span>｜</span>
+                <a href="javascript:void(0)" id="go-desktop">电脑版</a>
+            </p>
+            <p>Copyright&copy;duokan.com</p>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
